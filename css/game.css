@@ -63,8 +63,7 @@ body{
 
 /* ============= card part starts ====================== */
 .mainCard {
-  position: relative;
-  left: 119%;
+  margin-left: 750px
 }
 .card {
   position: relative;
