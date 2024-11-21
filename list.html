@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Your Essentials</title>
+  <link rel="stylesheet" href="css/list.css">
+   <!-- ====================== Responssive ============== -->
+    <link rel="stylesheet" href="css/listResponsive.css">
+  <!-- ====================== favicon ============== -->
+  <link rel="icon" type="image" href="images/CQlogo1.jpeg">
+  <!-- ============== fontawesome link =============== -->
+  <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+
+    <div class="sideBar">
+        <a href="index.html"><img src="images/home-button.png" alt="home"></a>
+        <a href="list.html"><img src="images/to-do-list.png" alt="list"></a>
+        <a href="game.html"><img src="images/game-controller.png" alt="game"></a>
+        <a href="about.html""><img src="images/info.png" alt="about"></a>
+        <a target="_blank" href="https://www.facebook.com/"><img class="social" src="images/facebook.png" alt="fb"></a>
+        <a target="_blank" href="https://www.instagram.com/"><img class="social" src="images/instagram (1).png" alt="insta"></a>
+        <a target="_blank" href="https://github.com/"><img class="social" src="images/github (1).png" alt="git"></a>
+        <a target="_blank" href="https://twitter.com/"><img class="social" src="images/twitter.png" alt="twitter"></a>
+        <a target="_blank" href="https://linkedin.com/"><img class="social" src="images/linkedin (1).png" alt="linkedin"></a>
+    </div>
+    
+    <div class="motherContainer">
+        <!-- ============ Details counter box =============== -->
+        <div class="statBox">
+            <div class="details">
+                <h1>To-do App</h1>
+                <p class="keep">Keep it up!</p>
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div>
+                <p id="numbers"><span class="completedTask">0</span>/<span class="listedTask">0</span></p> 
+            </div>
+        </div>
+        <!-- ============ Task form ================== -->
+        <div class="farming">
+            <input onkeydown="enterKeyFun(event)" class="userTaskInp" type="search" placeholder="Write your task....." required>
+            <button class="addBtn" onclick="btnClickFun()">+</button>
+        </div>
+        <!-- ============== list items ==================== -->
+        <div class="motherList">
+            <!-- <div class="list">
+                <div class="listBox">
+                    <div class="check">
+                        <input class="checkBox" type="checkbox">
+                    </div>
+                    <input class="listTaskInp" type="text">
+                    <button class="editBtn"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="deleteBtn"><i class="fa-solid fa-trash-can"></i></button>
+                </div>
+            </div> -->
+        </div>
+        <div class="congrats">
+            <img src="https://media4.giphy.com/media/6uOKby3tWy4yXwTa5H/giphy.gif?cid=6c09b952mt7rdwpesriorlpcygs58ojxbsbmow6kwycucnbx&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g" alt="gif">
+        </div>
+         
+
+    </div>
+
+    <!-- ========= JS link part ===============  -->
+    <script src="js/list.js"></script>
+
+    <!-- confetti -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>

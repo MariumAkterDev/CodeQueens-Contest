@@ -1,0 +1,442 @@
+/*============================== Common CSS ================================= */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #011742f5, #020025);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:root{
+    --sky: #00eaff;
+    --sora  : "Sora", sans-serif; 
+    --sans  : "Open Sans", sans-serif;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+/* ================== Main Menu ============== */
+.mainMenu{
+    width: 100%;
+    border-top: thin solid rgb(81, 78, 78);
+    backdrop-filter: blur(700px);
+    box-shadow: rgba(112, 112, 112, 0.4) 0px 2px 4px, rgba(99, 98, 98, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.menuRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo img{
+    width: 180px;
+    height: 100px;
+}
+.menuRow ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.menuRow ul li a{
+    font-size: 28px; 
+    color: white;
+    font-weight: 600;
+    font-family: var(--sans);
+}
+.menuRow ul li{
+    width: 130px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    transition: all linear 0.2s;
+}
+.menuRow ul li:hover{
+    color: #000000;
+    background: var(--sky);
+    transform: translateY(-10px);
+   
+}
+.menuRow ul li:hover a{
+    color: #220120;
+}
+.respon{
+    width: 976px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ================== Subscribe Button =============== */
+
+.headBtn button{
+    width: 180px;
+    height: 50px;
+    background-color: #F0003C;
+    color: whitesmoke;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: var(--sans);
+    padding: 7px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+    transition: all linear ;
+    display: inline-block;
+}
+
+.headBtn button:active{
+    box-shadow: none;
+    transform: scale(0.96);
+}
+
+.headBtn .subscribe:hover{
+    filter: brightness(.8)
+}
+
+.headBtn button span{
+    margin-left: 8px;
+}
+
+.headBtn .Subscribed{
+    background: #00eaff ;
+    color: black;
+    display: none;
+}
+
+.headBtn .Subscribed img{
+    width: 25px;
+    height: 25px;
+   
+}
+.menu-bar img{
+    width: 20px;
+    height: 20px;
+}
+.menu-bar {
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    border-radius: 4px;
+    background: black;
+    display: none;
+}
+/* About Section */
+/* About Section styling */
+.about-container {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: center;
+    /* padding: 105px; */
+    padding-top: 100px;
+    padding-bottom: 80px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.about-container h1 {
+    font-size: 44px;
+    font-family: var(--sans);
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fafcff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-container h4{
+    margin-top: 78px;
+    margin-bottom: 20px;
+    color: #00eaff;
+    font-size: 28px;
+    font-family: var(--sans);
+
+}
+.about-container .Welcome{
+    color:white;
+    font-size: 18px;
+    font-family: var(--sans);
+    font-weight: 300;
+    width: 600px;
+    word-spacing: 2px;
+}
+.team {
+    margin-top: 60px;
+    display: flex;
+    gap: 100px;
+}
+.team-member{
+    width: 500px;
+    text-align: center;
+    padding-top: 60px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #00f2ff;
+}
+
+.team-member h2 {
+    width: 300px;
+    font-size: 28px;
+    font-family: var(--sans);
+    font-weight: 600;
+    margin: 10px 0 5px;
+    color: #bbf107;
+}
+.team-member p {
+    font-size: 18px;
+    font-family: var(--sans);
+    font-weight: 300;
+    margin: 5px 0;
+    color: white;
+}
+.team-member a {
+    color: #00eaff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.team-member a:hover {
+    color: #063def;
+}
+.team-member img{
+    width: 152px;
+    height: 152px;
+}
+/* ========================= Button ==================== */
+#button_1{
+    display: flex;
+    gap: 10px;
+    width: 606px;
+}
+/* ===================== input design starts ======================== */
+.inputContainer {
+    width: 500px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+.main_input {
+    width: 486px;
+    height: 56px;
+    border: none;
+    outline: none;
+    caret-color: #2159a2ee;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+    letter-spacing: 0.8px;
+    color: #2159a2ee;
+    font-size: 24px;
+}
+.main_input::placeholder{
+    color: #2159a28f;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 400;
+}
+/* ------------------ input part ends --------------------- */
+/* ================== button part starts ================== */
+button{
+    position: relative;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 5px;
+    transition: filter 250ms;
+    user-select: none;
+    touch-action: manipulation;
+}
+.shadow {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 67%;
+    border-radius: 7px;
+    background: hsl(0deg 0% 0% / 0.25);
+    will-change: transform;
+    transform: translateY(2px);
+    transition: transform 
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+}
+.edge {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width: 99%;
+    height: 95%;
+    border-radius: 7px;
+    background: linear-gradient(
+       to left,
+       #52001b 0%,
+       hsl(340deg 100% 32%) 8%,
+       hsl(340, 100%, 32%) 92%,
+       hsl(340deg 100% 16%) 100%
+     );
+}
+.front {
+    display: block;
+    position: relative;
+    padding: 18px 20px;
+    border-radius: 7px;
+    font-size: 24px;
+    color: white;
+    background: hsl(345deg 100% 47%);
+    will-change: transform;
+    transform: translateY(0px);
+    transition: transform
+       600ms
+       cubic-bezier(.3, .7, .4, 1);
+}
+.mainButton:hover {
+    filter: brightness(110%);
+}
+button:hover .front {
+    transform: translateY(-6px);
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+}
+button:active .front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+}
+button:hover .shadow {
+    transform: translateY(4px);
+    transition: transform
+       250ms
+       cubic-bezier(.3, .7, .4, 1.5);
+} 
+button:active .shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+}  
+button:focus:not(:focus-visible) {
+    outline: none;
+}
+/* -------------------- button part ends -------------------- */
+/* ------------------- X ------------------------ */
+/* ======================== Footer ======================= */
+
+Footer{
+    width: 100%;
+    border-top: 1px solid rgb(74, 74, 74);
+    background: #00182a;
+}
+
+.footerLast{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--sans);
+}
+
+.footerLast .part1{
+    width: 600px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
+
+.footerLast .part1 a{
+    font-size: 18px;
+    color: white;
+    font-family:  var(--sans);
+    position: relative;
+    width: fit-content;
+}
+
+.footerLast .part1 a::before{
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #dfdfdf;
+    left: 0;
+    bottom: -3px;
+    transition: all linear 0.4s;
+}
+
+.footerLast .part1 a:hover::before{
+    width: 100%;
+}
+
+.footerLast .part2{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 18px;
+    color: white;
+    font-family:  var(--sans);
+}
+
+
+.footerLast .part2 h3{
+    color: yellow;
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.cpRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.socials img{
+    width: 35px;
+    height: 35px;
+}
+.socials a:hover{
+    animation: tada 900ms;
+}
+/* ------------------- mb inp and btn ------------ */
+.option-2{
+    opacity: 0;
+}

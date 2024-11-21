@@ -1,0 +1,213 @@
+@media (max-width: 575.98px){
+    .container{
+        width: 575.98px;
+    }
+    .sideBar img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+    .sideBar .social {
+        width: 20px;
+        height: 20px;
+    }
+    .sideBar {
+        width: 95%;
+        height: 80px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0;
+        position: absolute;
+        top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .statBox {
+        margin-top: 50px;
+        width: 87%;
+        padding: 18px;
+       
+    }
+    h1{
+        font-size: 22px;
+    }
+    .keep{
+        font-size: 16px;
+    }
+    #numbers {
+        width: 55px;
+        height: 55px;
+       
+    }
+    input, .userTaskInp {
+        font-size: 13px;
+       
+    }
+    .farming {
+        width: 85%;
+        margin-top: 38px;
+        align-items: center;
+    }
+    .listBox {
+        width: 90%;
+        gap: 8px;
+    }
+    button {
+        width: 32px;
+        height: 32px;
+    }
+    .checkBox {
+        width: 18px;
+        height: 18px;
+    }
+    .list {
+        width: 96%;
+    }
+
+    .motherList{
+        margin-left: 12%;
+    }
+
+}
+/* ----------------------------------------------------------- */
+/* ============= md device ============================ */
+@media (min-width: 576px) and (max-width: 767.98px){
+    .sideBar img {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+    }
+    .sideBar .social {
+        width: 20px;
+        height: 20px;
+    }
+    .sideBar {
+        width: 95%;
+        height: 80px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0;
+        position: absolute;
+        top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .statBox {
+        margin-top: 50px;
+        width: 87%;
+        padding: 18px;
+       
+    }
+    h1{
+        font-size: 22px;
+    }
+    .keep{
+        font-size: 16px;
+    }
+    #numbers {
+        width: 55px;
+        height: 55px;
+       
+    }
+    input, .userTaskInp {
+        font-size: 13px;
+       
+    }
+    .farming {
+        width: 85%;
+        margin-top: 38px;
+        align-items: center;
+    }
+    .listBox {
+        width: 90%;
+        gap: 8px;
+    }
+    button {
+        width: 32px;
+        height: 32px;
+    }
+    .checkBox {
+        width: 18px;
+        height: 18px;
+    }
+    .list {
+        width: 96%;
+    }
+
+    .motherList{
+        margin-left: 12%;
+    }
+}
+/* ------------------------------------------------------------------ */
+/* ============= lg device ============================ */
+@media (min-width: 768px) and (max-width: 991.98px){
+    .sideBar img {
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+    }
+    .sideBar .social {
+        width: 25px;
+        height: 25px;
+    }
+    .sideBar {
+        width: 95%;
+        height: 80px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 0;
+        position: absolute;
+        top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .statBox {
+        margin-top: 50px;
+        width: 87%;
+        padding: 18px;
+       
+    }
+    h1{
+        font-size: 22px;
+    }
+    .keep{
+        font-size: 16px;
+    }
+    #numbers {
+        width: 55px;
+        height: 55px;
+       
+    }
+    input, .userTaskInp {
+        font-size: 13px;
+       
+    }
+    .farming {
+        width: 85%;
+        margin-top: 38px;
+        align-items: center;
+    }
+    .listBox {
+        width: 90%;
+        gap: 8px;
+    }
+    button {
+        width: 32px;
+        height: 32px;
+    }
+    .checkBox {
+        width: 18px;
+        height: 18px;
+    }
+    .list {
+        width: 96%;
+    }
+
+    .motherList{
+        margin-left: 12%;
+    }
+}
+/* --------------------------------------------------------------------------------- */

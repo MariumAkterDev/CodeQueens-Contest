@@ -1,0 +1,438 @@
+/* =============== Google fonts ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Gloria+Hallelujah&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Gloria+Hallelujah&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Gloria+Hallelujah&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&family=Sora:wght@100..800&display=swap');
+
+/* -------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,li, a {
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/bggggggg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+:root{
+    --sky: #00eaff;
+    --sora  : "Sora", sans-serif; 
+    --sans  : "Open Sans", sans-serif;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+.MainDiv{
+    display: none;
+}
+
+/* ============================= loader ================================================== */
+.Loading{
+    width: 100%;
+    height: 100vh;
+    background: #dfd8fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+}
+.welcome{
+    animation: jackInTheBox 5s;
+    animation-delay: 2s linear;
+    
+}
+.loaderPanel{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader img{
+    width: 100px;
+    height: 100px;
+}
+.l1{
+    animation: bounceInLeft 3s linear;
+}
+.l2{
+    animation: bounceInRight 3s linear;
+}
+.l3{
+    animation: bounce 3s linear;
+}
+/* ==================================== Main Menu ====================================== */
+.mainMenu{
+    width: 100%;
+    background: #00182a;
+    backdrop-filter: blur(700px);
+    box-shadow: rgba(112, 112, 112, 0.4) 0px 2px 4px, rgba(99, 98, 98, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.respon{
+    width: 976px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuRow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.logo img{
+    width: 180px;
+    height: 100px;
+}
+.logo2{
+    display: none;
+}
+.menuRow ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.menu-bar img{
+    width: 20px;
+    height: 20px;
+}
+.menu-bar {
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+    border-radius: 4px;
+    background: black;
+    display: none;
+}
+.menuRow ul li a{
+    font-size: 28px; 
+    color: white;
+    font-weight: 600;
+    font-family: var(--sans);
+
+}
+.menuRow ul li{
+    width: 130px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px;
+    transition: all linear 0.2s;
+   
+}
+.menuRow ul li:hover{
+    color: #000000;
+    background: var(--sky);
+    transform: translateY(-10px);
+   
+}
+.menuRow ul li:hover a{
+    color: #220120;
+}
+/* ==================================== Subscribe Button =================================== */
+
+.headBtn button{
+    width: 200px;
+    height: 50px;
+    background-color: #F0003C;
+    color: whitesmoke;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: var(--sans);
+    padding: 7px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: rgb(24, 24, 24) 0px 5px 15px;
+    transition: all linear ;
+}
+.headBtn button:active{
+    box-shadow: none;
+    transform: scale(0.96);
+}
+.headBtn .subscribe:hover{
+    filter: brightness(140%);
+}
+.headBtn button span{
+    margin-left: 8px;
+}
+.headBtn .Subscribed{
+    background: #00eaff ;
+    color: black;
+    font-weight: 600;
+    box-shadow: none;
+    display: none;
+    
+}
+.Subscribed img{
+    width: 25px;
+    height: 25px;
+}
+/* -------------------------------------- Subscribe button ends ----------------------------- */
+/* ========================================= mood ========================================= */
+.headEnd{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.mood img{
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    
+}
+.mood img:hover{
+    background: #bcbcbc;
+    border-radius: 6px;
+}
+.sun:hover{
+    background: #3b3b3b!important;
+}
+.mood .night{
+    display: none;
+}
+/* ---------------------------- mood ends -------------------------------- */
+/* ---------------------------------------- Navbar Ends ---------------------------------------*/
+
+/* ============================================ Banner part =================================== */
+.banner{
+    padding-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ==================================== banner animation ===================================== */
+.scene {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d; 
+    animation: rotate 5s infinite linear;
+}
+
+.cube {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; 
+}
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc; /* Add border to faces */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front  { transform: translateZ(100px); }
+.back   { transform: rotateY(180deg) translateZ(100px); }
+.right  { transform: rotateY(90deg) translateZ(100px); }
+.left   { transform: rotateY(-90deg) translateZ(100px); }
+.top    { transform: rotateX(90deg) translateZ(100px); }
+.bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+@keyframes rotate {
+    from { transform: rotateX(0) rotateY(0); }
+    to { transform: rotateX(360deg) rotateY(360deg); }
+}
+/* ========================================== banner img =================================== */
+.bannerImgCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.bannerImgCol img{
+    width: 500px;
+    height: 400px;
+}
+.bannerImgCol p{
+    letter-spacing: 1px;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: var(--sans);
+    margin-top: 80px;
+}
+.bannerImgCol span{
+    color: #30e208;
+}
+/* -------------------------------------- banner animation ends ----------------------------- */
+/* ======================================= banner text ====================================== */
+.bannerImgCol img {
+    width: 200px !important;
+    height: 200px !important;
+}
+.bannertxtCol h1{
+    width: 478px;
+    color: var(--sky);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 64px;
+    font-family: var(--sans);
+}
+.bannertxtCol p {
+    padding-top: 30px;
+    width: 589px;
+    word-spacing: 4px;
+    letter-spacing: normal;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    font-family: var(--sans);
+}
+.bannertxtCol h2{
+    margin-top: 30px;
+    color: yellow;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 64px;
+    font-family: var(--sans);
+}
+/* ===================================== banner button ==================================== */
+.btn {
+    --color: ;
+    --color2: #021E33;
+    margin-top: 15px;
+    padding: 20px 40px 20px 40px;
+    background: #000000;
+    border-radius: 6px;
+    border: .3px solid var(--color);
+    transition: all linear .5s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: var(--sans);
+    color: var(--sky);
+    backdrop-filter: blur(1000px);
+}  
+.btn::after, .btn::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    transform: skew(90deg) translate(-50%, -50%);
+    position: absolute;
+    inset: 50%;
+    left: 25%;
+    z-index: -1;
+    transition: all linear 0.5s ;
+    background-color: var(--sky);
+}  
+.btn::before {
+    top: -50%;
+    left: -25%;
+    transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}  
+.btn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+} 
+.btn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+}
+.btn:hover {
+    color: var(--color2);
+}
+.btn:active {
+    filter: brightness(.3);
+}
+/* -------------------------- banner button ends ---------------------------- */
+
+/* ------------------------------------ banner ends ----------------------------------- */
+/* ======================================== Footer ========================================== */
+Footer{
+    width: 100%;
+    margin-top: 117px;
+    border-top: 1px solid rgb(74, 74, 74);
+    background: #00182a;
+}
+/* ================================= footer last ======================================== */
+.footerLast{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--sans);
+}
+.footerLast .part1{
+    width: 600px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+}
+
+.footerLast .part1 a{
+    font-size: 18px;
+    color: white;
+    font-family:  var(--sans);
+    position: relative;
+    width: fit-content;
+}
+.footerLast .part1 a::before{
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #dfdfdf;
+    left: 0;
+    bottom: -3px;
+    transition: all linear 0.4s;
+}
+.footerLast .part1 a:hover::before{
+    width: 100%;
+}
+.footerLast .part2 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 18px;
+    color: white;
+    font-family:  var(--sans);
+}
+.footerLast .part2 h3{
+    color: yellow;
+    margin-right: 15px;
+    font-weight: 400;
+}
+.cpRight{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    
+}
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.socials img{
+    width: 35px;
+    height: 35px;
+}
+.socials a:hover{
+    animation: tada 800ms;
+}
+/* --------------------------------------------------------------------------------------------- */

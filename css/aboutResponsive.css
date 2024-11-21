@@ -1,0 +1,449 @@
+@media (max-width: 575.98px){
+    body{
+        height: 100%;
+    }
+    .container{
+        width: 575.98px;
+    }
+    .container{
+        width: 575.98px;
+    }
+    .logo img {
+        width: 69px;
+        height: 39px;
+    }
+    .respon {
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: gray;
+        position: absolute;
+        top: 0;
+        right: -1200px;
+        width: 50%;
+        height: 83vh;
+        padding-top: 20px;
+    }
+    .menuRow ul {
+        flex-direction: column;
+        gap: 17px;
+    }
+    .headEnd {
+        flex-direction: column;
+        height: 83px;
+        gap: 7px;
+        justify-content: center;
+    }
+    .menuRow ul li a {
+        font-size: 16px;
+    }
+    .headBtn button {
+        width: 125px;
+        height: 31px;
+        background-color: #e20223;
+        color: whitesmoke;
+        font-size: 14px;
+        padding: 0px;
+    }
+    .headBtn .Subscribed img {
+        width: 14px;
+        height: 14px;
+    }
+    .menuRow ul li {
+        width: 90px;
+        text-align: center;
+        padding: 11px;
+        border-radius: 6px;
+        border-bottom: 1px solid white;
+        transition: all linear 0.2s;
+    }
+    .menu-bar {
+        display: block;
+        position: absolute;
+        top: 26px;
+        right: 65px;
+    }
+    .respon.active{
+        right: 0;
+    }
+    .about-container h1 {
+        width: 100px;
+        font-size: 21px;
+        
+    }
+    .about-container .Welcome {
+        font-size: 12px;
+        width: 317px;
+    }
+    .about-container {
+        width: 0;
+        padding-top: 41px;
+        padding-bottom: 61px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .team-member {
+        padding-top: 0px;
+    }
+    .team-member img {
+        width: 74px;
+        height: 74px;
+    }
+    .team-member h2 {
+        font-size: 20px;
+       
+    }
+    .team-member p {
+        font-size: 12px;
+    }
+    .about-container h4 {
+        width: 200px;
+        margin-top: 23px;
+        font-size: 14px;
+
+    }
+    .inputContainer{
+        display: none!important;
+    }
+    .mainButton{
+        display: none;
+    }
+    .option-2{
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .option-2 .mbInp{
+        width: 200px;
+        height: 30px;
+        padding-left: 5px ;
+        padding-right: 5px ;
+        background: #f8dada;
+        outline: none;
+        border: none;
+        font-family:  var(--sans);
+        border-radius: 4px;
+    }
+    .mbInp::placeholder{
+        font-style: italic;
+    }
+    .option-2 .mbInpBtn{
+        width: 50px; 
+        height: 32px;
+        background: #f86969;
+        outline: none;
+        border: none;
+        font-family:  var(--sans);
+        color: #ffffff;
+        font-weight: 600;
+        border-radius: 4px;
+    }
+    Footer {
+        margin-top: 0px;
+        padding: 10px;
+        padding-bottom: 10px;
+    }
+    .footerLast {
+        padding-top: 4px;
+        padding-bottom: 2px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .footerLast .part1 a {
+        font-size: 6px;
+        color: white;
+        font-family: var(--sans);
+        position: relative;
+        width: fit-content;
+    }
+    .footerLast .part1 {
+        font-size: 6px;
+        width: 185px;
+        gap: 4px;
+    }
+    .footerLast .part2 {
+        font-size: 0px;
+    }
+    .socials img {
+        width: 18px;
+        height: 18px;
+    }
+    .socials {
+        gap: 8px;
+    }
+
+}
+/* ============= md device ============================ */
+@media (min-width: 576px) and (max-width: 767.98px){
+    body{
+        height: 100%;
+    }
+    .container{
+		width: 576px;
+	}
+    .logo img {
+        width: 69px;
+        height: 39px;
+    }
+    .respon {
+        justify-content: space-evenly;
+        flex-direction: column;
+        background-color: gray;
+        position: absolute;
+        top: 0;
+        right: -1200px;
+        width: 50%;
+        height: 93vh;
+        padding-top: 20px;
+    }
+    .menuRow ul {
+        flex-direction: column;
+        gap: 17px;
+    }
+    .headEnd {
+        flex-direction: column;
+        height: 83px;
+        gap: 7px;
+        justify-content: center;
+    }
+    .menuRow ul li a {
+        font-size: 16px;
+    }
+    .headBtn button {
+        width: 125px;
+        height: 31px;
+        background-color: #e20223;
+        color: whitesmoke;
+        font-size: 14px;
+        padding: 0px;
+    }
+    .headBtn .Subscribed img {
+        width: 14px;
+        height: 14px;
+    }
+    .menuRow ul li {
+        width: 90px;
+        text-align: center;
+        padding: 11px;
+        border-radius: 6px;
+        border-bottom: 1px solid white;
+        transition: all linear 0.2s;
+    }
+    .menu-bar {
+        display: block;
+        position: absolute;
+        top: 26px;
+        right: 65px;
+    }
+    .respon.active{
+        right: 0;
+    }
+    .about-container h1 {
+        width: 100px;
+        font-size: 21px;
+        
+    }
+    .about-container .Welcome {
+        font-size: 12px;
+        width: 317px;
+    }
+    .about-container {
+        width: 0;
+        padding-top: 41px;
+        padding-bottom: 61px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .team-member {
+        padding-top: 0px;
+    }
+    .team-member img {
+        width: 74px;
+        height: 74px;
+    }
+    .team-member h2 {
+        font-size: 20px;
+       
+    }
+    .team-member p {
+        font-size: 12px;
+    }
+    .about-container h4 {
+        width: 200px;
+        margin-top: 23px;
+        font-size: 14px;
+
+    }
+    .inputContainer{
+        display: none!important;
+    }
+    .mainButton{
+        display: none;
+    }
+    .option-2{
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .option-2 .mbInp{
+        width: 200px;
+        height: 30px;
+        padding-left: 5px ;
+        padding-right: 5px ;
+        background: #f8dada;
+        outline: none;
+        border: none;
+        font-family:  var(--sans);
+        border-radius: 4px;
+    }
+    .mbInp::placeholder{
+        font-style: italic;
+    }
+    .option-2 .mbInpBtn{
+        width: 50px; 
+        height: 32px;
+        background: #f86969;
+        outline: none;
+        border: none;
+        font-family:  var(--sans);
+        color: #ffffff;
+        font-weight: 600;
+        border-radius: 4px;
+    }
+    .footerLast {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: 10px;
+	}
+	.footerLast .part1 a {
+		font-size: 10px;
+		color: white;
+		font-family: var(--sans);
+		position: relative;
+		width: fit-content;
+	}
+	.footerLast .part1 {
+		font-size: 10px;
+		width: 310px;
+		gap: 4px;
+	}
+	.footerLast .part2 {
+		font-size: 0px;
+	}
+	.socials img {
+		width: 25px;
+		height: 25px;
+	}
+	.socials {
+		gap: 8px;
+	}
+
+}
+/* ------------------------------------------------------------------ */
+/* ============= lg device ============================ */
+@media (min-width: 768px) and (max-width: 991.98px){
+    .container{
+		width: 768px;
+	}
+    .logo img {
+        width: 130px;
+        height: 70px;
+    }
+    .menuRow ul {
+        gap: 0px;
+    }
+    .menuRow ul li a {
+        font-size: 23px;
+    }
+    .menuRow ul li {
+        width: 111px;
+        padding: 9px;
+    }
+    .headBtn button {
+        width: 140px;
+        height: 50px;
+        font-size: 17px;
+        padding: 7px;
+    }
+    .menuRow ul li a {
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .headBtn .Subscribed img {
+        width: 17px;
+        height: 17px;
+    }
+    .footerLast {
+        justify-content: space-evenly;
+    }
+    .footerLast .part1 a {
+        font-size: 10px;
+        position: relative;
+        width: fit-content;
+    }
+    .footerLast .part1 {
+        color: white;
+        font-size: 9px;
+        gap: 4px;
+    }
+    .footerLast{
+        width: 800px;
+    }
+    .part2{
+        display: block;
+    }
+    .footerLast .part2 {
+        font-size: 16px;
+        gap: 0;
+    }
+    .socials {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap: 10px;
+    }
+    .socials img {
+        width: 25px;
+        height: 25px;
+    }
+    .footerLast .part1 {
+        width: 271px;
+    }
+}
+/* ------------------------------------------------------------------------------------- */
+/* ============= xl device ============================ */
+@media (min-width: 992px) and (max-width: 1199.98px){
+	.container {
+		width: 992px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	body{
+		height: 100%;
+	}
+	.footerLast .part1 {
+		width: 574px;
+		gap: 6px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

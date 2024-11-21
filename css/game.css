@@ -1,0 +1,418 @@
+/* ================ font link ================= */
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Gloria+Hallelujah&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rozha+One&family=Sora:wght@100..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+ul, ol, a{
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  /* padding-left: 5%;
+  padding-right: 25%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* flex-direction: column; */
+  background: url(../images/blue-1634110_1280.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+}
+:root{
+  --sans  : "Open Sans", sans-serif;
+  --nav-primary: #011441;
+}
+/* ================== side bar ============ */
+.sideBar{
+  width: 140px;
+  height: 650px;
+  padding: 15px 0;
+  backdrop-filter: blur(30px);
+  margin-left: 70px;
+  position: absolute;
+  left: 0;
+  border: 1px solid rgba(245, 245, 245, 0.595);
+  box-shadow: rgba(241, 227, 227, 0.4) 0px 2px 4px, rgba(250, 230, 230, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  display: flex;   
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  
+}
+.sideBar img{
+  width: 58px;
+  height: 58px;
+  cursor: pointer;
+}
+.sideBar .social{
+  width: 40px;
+  height: 40px;
+}
+.sideBar img:hover{
+  animation: tada 0.8s ;
+}
+
+/* ============= card part starts ====================== */
+
+.mainCard{
+  margin-left: 40%;
+}
+.card {
+  position: relative;
+  width: 420px;
+  height: 517px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+} 
+.childCard{
+  padding: 5px 15px;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 431px;
+  height: 528px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+} 
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+} 
+.welcome {
+  color: #fc00ff;
+  text-align: center;
+  font-size: 28px;
+  padding-top: 25px;
+  line-height: 45px;
+}
+.welcome span{
+  color: rgb(21, 250, 0);
+  font-size: 34px;
+}
+
+.card p:last-child {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: justify;
+  word-spacing: -4.7px;
+  color: antiquewhite;
+  letter-spacing: 2.2px;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+} 
+.card:hover::after {
+  filter: blur(30px);
+}  
+.card:hover::before {
+  transform: rotate(90deg) scaleX(1.23) scaleY(0.82);
+}
+
+/* *************** card part ends ******************* */
+
+/* ============== card button part starts ============= */
+
+.cardButton {
+  position: relative;
+  padding: 10px 22px;
+  margin-left: 0;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #7d2ae8;
+  transition: all 0.1s ease;
+}
+.cardButton:active {
+  transform: scale(0.94);
+}
+.cardButton:before,
+.cardButton:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+.cardButton:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #7d2ae8 20%, transparent 30%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: greentopBubbles 0.6s ease;
+}
+@keyframes greentopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+.cardButton:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #7d2ae8 15%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%),
+    radial-gradient(circle, #7d2ae8 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: greenbottomBubbles 0.6s ease;
+}
+@keyframes greenbottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+/* **************** card button part ends **************** */
+
+.mainDiv{
+  width: 800px;
+  height: 650px;
+  backdrop-filter: blur(40px);
+  border: 1px solid rgba(245, 245, 245, 0.595);
+  box-shadow: rgba(241, 227, 227, 0.4) 0px 2px 4px, rgba(250, 230, 230, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  opacity: 0;
+  border-radius: 10px;
+}
+
+.gameTitle h1{
+  padding-top: 40px;
+  font-size: 42px;
+  font-weight: 700;
+  font-family: var(--sans);
+  color: #00FF9C;
+  animation: rubberBand 4s linear;
+}
+.main{
+  width: 608px;
+  background-color: #191919;
+  border: 1px solid rgb(255, 102, 0);
+  padding: 50px;
+  /* margin-top: 20px; */
+  border-radius: 5px;
+
+}
+h2{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 50px;
+  color: #ECFFE6;
+  font-weight: 500;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+}
+.error{
+  font-size: 40px;
+  color: rgb(255, 0, 0);
+  position: relative;
+}
+input{
+  width: 300px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: antiquewhite;
+  font-size: 30px;
+  font-family: cursive;  
+}
+input::placeholder{
+  font-size: 26px;
+  color: rgba(209, 99, 59, 0.468);
+}
+button{
+  width: 150px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-left: 40px;
+  font-size: 30px;
+  font-weight: 700;
+  color: antiquewhite;
+  background-color: rgb(255, 102, 0);
+  font-family: cursive;
+  cursor: pointer;
+  transition: all linear 0.1s;
+}
+button:active{
+  transform: scale(0.9)
+}
+
+/* =============== palyer 2 ====================== */
+.playerTwo{
+  border: 1px solid rgb(0, 20, 241);
+  display: none;
+}
+.inputPlayerTwo::placeholder{
+  color: rgba(105, 105, 241, 0.46);
+}
+.playerTwoButton{
+  background: rgb(0, 20, 241);
+    
+}
+/* ================= player 3 ========================= */
+.playerThree{
+  border: 1px solid rgb(115, 193, 20);
+  display: none;
+}
+.inputPlayerThree::placeholder{
+  color: rgba(115, 193, 20, 0.452);
+}
+.playerThreeButton{
+  background: rgb(91, 155, 13);
+}
+
+/* ================================================================ */
+
+.chanceNumber, 
+.chanceNumber3{
+  color: rgb(209, 196, 196);
+  font-size: 25px;
+  font-weight: 400;
+  font-family: cursive;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+.chanceNumber span, 
+.chanceNumber3 span{
+  margin-left: 10px;
+}
+.winner{
+  display: none;
+  text-align: center;
+}
+.winner img{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  border: 5px solid rgba(0, 0, 0, 0.258);
+}
+.result{
+  color: #bdc1ff;
+  font-family: var(--sans);
+  font-size: 40px;
+}
+.commonText{
+  font-size: 30px;
+  color: chartreuse;
+  letter-spacing: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  bottom: 50px;
+}
+.inputNumber{
+  color: #37ff00;
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 100;
+  display: none;
+}
+
+/* ============== player 023, 0230 style (1st & 2nd player er pore j cardgulo ashbe) ================ */
+
+.Player023Heading{
+  color: rgb(245, 253, 0);
+  font-size: 30px;
+  margin: 0 0 50px 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* xxxxxxxxxxxxxxxxxxxx (1st player er pore j card ashbe) */
+
+.player023{
+  text-align: center;
+  border: 3px solid rgb(245, 253, 0);
+  display: none;
+}
+.player023 button{
+  background: rgb(245, 253, 0);
+  color: #000;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+}
+/* xxxxxxxxxxxxxxxxxxxx (2nd player er pore j card ashbe) */
+.player0230{
+  text-align: center;
+  border: 3px solid rgb(255, 17, 168);
+  display: none;
+}
+.player0230 button{
+  background: rgb(255, 17, 168);
+  color: #000;
+  cursor: pointer;
+}
+.player0230 .Player023Heading{
+  color: rgb(255, 17, 168);
+}
+
