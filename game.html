@@ -18,105 +18,105 @@
 </head>
 <body>
     
-    <div class="sideBar">
-        <a href="index.html"><img src="images/home-button.png" alt="home"></a>
-        <a href="list.html"><img src="images/to-do-list.png" alt="list"></a>
-        <a href="game.html"><img src="images/game-controller.png" alt="game"></a>
-        <a href="about.html"><img src="images/info.png" alt="about"></a>
-        <a target="_blank" href="https://www.facebook.com/"><img class="social" src="images/facebook.png" alt="facebook"></a>
-        <a target="_blank" href="https://www.instagram.com/"><img class="social" src="images/instagram (1).png" alt="insta"></a>
-        <a target="_blank" href="https://github.com/"><img class="social" src="images/github (1).png" alt="github"></a>
-        <a target="_blank" href="https://twitter.com/"><img class="social" src="images/twitter.png" alt="twitter"></a>
-        <a target="_blank" href="https://linkedin.com/"><img class="social" src="images/linkedin (1).png" alt="linkedin"></a>
-    </div>
-    <!-- =========== card part start=============== -->
-    <div class="mainCard">
-        <div class="card">
-            <div class="childCard">
-                <h1 class="welcome">
-                    Welcome to <br>
-                    <span>Guess the Number</span>
-                </h1>
-               <div class="gameRule">
-                <p>
-                    Player 1 will secretly choose a number between 0 and 10. Player 2 guesses first. If wrong, Player 3
-                    guesses. If neither player guesses correctly within three attempts, Player 1 wins. Let's see who has
-                    the
-                    sharpest mind and can crack the code!
-                </p>
-               </div>
+        <div class="sideBar">
+            <a href="index.html"><img src="images/home-button.png" alt="home"></a>
+            <a href="list.html"><img src="images/to-do-list.png" alt="list"></a>
+            <a href="game.html"><img src="images/game-controller.png" alt="game"></a>
+            <a href="about.html"><img src="images/info.png" alt="about"></a>
+            <a target="_blank" href="https://www.facebook.com/"><img class="social" src="images/facebook.png" alt="facebook"></a>
+            <a target="_blank" href="https://www.instagram.com/"><img class="social" src="images/instagram (1).png" alt="insta"></a>
+            <a target="_blank" href="https://github.com/"><img class="social" src="images/github (1).png" alt="github"></a>
+            <a target="_blank" href="https://twitter.com/"><img class="social" src="images/twitter.png" alt="twitter"></a>
+            <a target="_blank" href="https://linkedin.com/"><img class="social" src="images/linkedin (1).png" alt="linkedin"></a>
+        </div>
+        <!-- =========== card part start=============== -->
+        <div class="mainCard">
+            <div class="card">
+                <div class="childCard">
+                    <h1 class="welcome">
+                        Welcome to <br>
+                        <span>Guess the Number</span>
+                    </h1>
+                   <div class="gameRule">
+                    <p>
+                        Player 1 will secretly choose a number between 0 and 10. Player 2 guesses first. If wrong, Player 3
+                        guesses. If neither player guesses correctly within three attempts, Player 1 wins. Let's see who has
+                        the
+                        sharpest mind and can crack the code!
+                    </p>
+                   </div>
+                </div>
+                <!-- ================= card button ================= -->
+                <button class="cardButton">
+                        Play <i class="fa-duotone fa-solid fa-play"></i>
+                </button>
+                <!-- ***************************************************** -->
             </div>
-            <!-- ================= card button ================= -->
-            <button class="cardButton">
-                    Play <i class="fa-duotone fa-solid fa-play"></i>
-            </button>
-            <!-- ***************************************************** -->
         </div>
-    </div>
-<!-- *********** card part ends ****************8 -->
-    <div class="mainDiv">
-        <div class="gameTitle">
-            <h1>Guess the Number</h1>
+    <!-- *********** card part ends ****************8 -->
+        <div class="mainDiv">
+            <div class="gameTitle">
+                <h1>Guess the Number</h1>
+            </div>
+    
+            <h2 class="playerName">Player - 1</h2>
+    
+            <p class="error"></p>
+    
+            <p class="inputNumber">Player 1 input code: <span class="inputNumber1"></span></p>
+    
+            <!-- ============ Player 1 starts ============== -->
+            <div class="main playerOne">
+                <input onkeydown="playerOneEnter(event)" class="inputPlayerOne" type="number"
+                    placeholder="Enter Player One">
+                <button onclick="playerOneFun()" class="playerOneButton">Guesss</button>
+            </div>
+    
+            <!-- ============ Player 023 (1st player er pore j card ashbe) starts ============== -->
+            <div class="main player023">
+                <h6 class="Player023Heading">Turn : Player - 2</h6>
+                <button onclick="playerTwoFun()" class="playerTwoButton player023Button">Ok</button>
+            </div>
+    
+            <!-- ============ Player 2 starts ============== -->
+            <div class="main playerTwo">
+                <div class="chanceNumber">Chance left <span class="chanceCount"> </span>/3</div>
+                <input onkeydown="playerTwoEnter(event)" class="inputPlayerTwo" type="number"
+                    placeholder="Enter Player Two">
+                <button onclick="playerTwoFun()" class="playerTwoButton">G0</button>
+            </div>
+    
+            <!-- ============ Player 0230 (2nd player er pore j card ashbe) starts ============== -->
+            <div class="main player0230">
+                <h6 class="Player023Heading">Turn : Player - 3</h6>
+                <button onclick="playerTwoFun()" class="playerTwoButton player0230Button">Ok</button>
+            </div>
+    
+            <!-- ============ Player 3 starts ============== -->
+            <div class="main playerThree">
+                <div class="chanceNumber3">Chance left <span class="chanceCount3"> </span>/3</div>
+                <input onkeydown="playerThreeEnter(event)" class="inputPlayerThree" type="number"
+                    placeholder="Enter Player Three">
+                <button onclick="playerThreeFun()" class="playerThreeButton">Run</button>
+            </div>
+    
+            <!-- =========== common text ================= -->
+            <!-- <marquee class="commonText" scrollamount="12" direction="left" behavior="scroll">
+                Enter a number between 0️⃣ ➡️ 🔟
+            </marquee> -->
+    
+            <h1 class="commonText"></h1>
+    
+            <!-- ================== winning part ================= -->
+            <div class="winner">"
+                <img src="https://media.tenor.com/E6lFjorkDRAAAAAM/winner.gif"
+                    alt="gif">
+                <h2 class="result"></h2>
+            </div>
+    
+            <!-- ****************************************************************** -->
+    
         </div>
-
-        <h2 class="playerName">Player - 1</h2>
-
-        <p class="error"></p>
-
-        <p class="inputNumber">Player 1 input code: <span class="inputNumber1"></span></p>
-
-        <!-- ============ Player 1 starts ============== -->
-        <div class="main playerOne">
-            <input onkeydown="playerOneEnter(event)" class="inputPlayerOne" type="number"
-                placeholder="Enter Player One">
-            <button onclick="playerOneFun()" class="playerOneButton">Guesss</button>
-        </div>
-
-        <!-- ============ Player 023 (1st player er pore j card ashbe) starts ============== -->
-        <div class="main player023">
-            <h6 class="Player023Heading">Turn : Player - 2</h6>
-            <button onclick="playerTwoFun()" class="playerTwoButton player023Button">Ok</button>
-        </div>
-
-        <!-- ============ Player 2 starts ============== -->
-        <div class="main playerTwo">
-            <div class="chanceNumber">Chance left <span class="chanceCount"> </span>/3</div>
-            <input onkeydown="playerTwoEnter(event)" class="inputPlayerTwo" type="number"
-                placeholder="Enter Player Two">
-            <button onclick="playerTwoFun()" class="playerTwoButton">G0</button>
-        </div>
-
-        <!-- ============ Player 0230 (2nd player er pore j card ashbe) starts ============== -->
-        <div class="main player0230">
-            <h6 class="Player023Heading">Turn : Player - 3</h6>
-            <button onclick="playerTwoFun()" class="playerTwoButton player0230Button">Ok</button>
-        </div>
-
-        <!-- ============ Player 3 starts ============== -->
-        <div class="main playerThree">
-            <div class="chanceNumber3">Chance left <span class="chanceCount3"> </span>/3</div>
-            <input onkeydown="playerThreeEnter(event)" class="inputPlayerThree" type="number"
-                placeholder="Enter Player Three">
-            <button onclick="playerThreeFun()" class="playerThreeButton">Run</button>
-        </div>
-
-        <!-- =========== common text ================= -->
-        <!-- <marquee class="commonText" scrollamount="12" direction="left" behavior="scroll">
-            Enter a number between 0️⃣ ➡️ 🔟
-        </marquee> -->
-
-        <h1 class="commonText"></h1>
-
-        <!-- ================== winning part ================= -->
-        <div class="winner">"
-            <img src="https://media.tenor.com/E6lFjorkDRAAAAAM/winner.gif"
-                alt="gif">
-            <h2 class="result"></h2>
-        </div>
-
-        <!-- ****************************************************************** -->
-
-    </div>
   <!-- ========= JS link part ===============  -->
     <script src="js/game.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
