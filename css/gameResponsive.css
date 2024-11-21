@@ -29,8 +29,9 @@
     }
     .mainCard {
         position: relative;
-        left: 19%;
+        left: 49%;
     }
+    
     .card:hover::before {
         transform: rotate(90deg) scaleX(1.1) scaleY(0.91);
     }
@@ -156,7 +157,8 @@
         justify-content: space-evenly;
     }
     .mainCard {
-        margin-left: 320px;
+        position: relative;
+        left: 49%;
     }
     .card:hover::before {
         transform: rotate(90deg) scaleX(1.1) scaleY(0.91);
@@ -282,7 +284,8 @@
         justify-content: space-evenly;
     }
     .mainCard {
-        margin-left: 320px;
+        position: relative;
+        left: 49%;
     }
     .card:hover::before {
         transform: rotate(90deg) scaleX(1.1) scaleY(0.91);
@@ -407,7 +410,8 @@
         justify-content: space-evenly;
     }
     .mainCard {
-        margin-left: 320px;
+        position: relative;
+        left: 49%;
     }
     .card:hover::before {
         transform: rotate(90deg) scaleX(1.1) scaleY(0.91);
