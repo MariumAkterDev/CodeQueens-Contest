@@ -74,11 +74,11 @@
         
     }
     .main {
-        width: 300px;
+        width: 267px;
         padding: 27px;
     }
     .Player023Heading {
-        font-size: 23px;
+        font-size: 19px;
     }
     input {
         width: 308px;
@@ -88,7 +88,7 @@
    .playerOneButton {
         width: 150px;
         padding: 8px 0px;
-        margin-left: 92px;
+        margin-left: 37px;
         margin-top: 30px;
     }
     input::placeholder{
@@ -120,7 +120,7 @@
     }
 
     .mainDiv {
-        width: 365px;
+        width: 301px;
         height: 411px;
         margin-top: 40px;
     }
